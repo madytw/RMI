@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/students"
+        xmlns:tns="http://www.example.com/students"
+        elementFormDefault="qualified">
+
+    <element name="table" type="tns:table-type" abstract="true"></element>
+    <element name="student" type="tns:student" substitutionGroup="tns:table"></element>
+    <element name="result" type="tns:result" substitutionGroup="tns:table"></element>
+
+    <element name="session">
+        <complexType>
+            <sequence>
+                <element ref="tns:table" minOccurs="1" maxOccurs="unbounded"/>
+                <!--<element name="student"-->
+                            <!--type="tns:student"  minOccurs="1" maxOccurs="unbounded"/>-->
+                <!--<element name="result"-->
+                         <!--type="tns:result"  minOccurs="1" maxOccurs="unbounded"/>-->
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="student">
+        <complexContent>
+            <extension base="tns:table-type">
+                <sequence>
+                    <element name="surname" type="string"/>
+                    <element name="group" type="integer"/>
+                </sequence>
+                <attribute name="id" use="required" type="integer"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="result">
+        <complexContent>
+            <extension base="tns:table-type">
+                <sequence>
+                    <element name="subject" type="string"/>
+                    <element name="mark" type="integer"/>
+                </sequence>
+                <attribute name="student_id" use="required" type="integer"/>
+            </extension>
+        </complexContent>
+
+    </complexType>
+
+    <complexType name="table-type"></complexType>
+</schema>

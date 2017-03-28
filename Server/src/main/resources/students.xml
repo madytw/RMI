@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><session xmlns="http://www.example.com/students" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/students students.xsd">
+    <student id="1">
+        <surname>Гриневский</surname>
+        <group>1</group>
+    </student>
+    <student id="2">
+        <surname>Авижень</surname>
+        <group>1</group>
+    </student>
+    <student id="3">
+        <surname>Козлов</surname>
+        <group>3</group>
+    </student>
+    <student id="4">
+        <surname>Пупкин</surname>
+        <group>3</group>
+    </student>
+    <student id="5">
+        <surname>Петрова</surname>
+        <group>2</group>
+    </student>
+    <student id="6">
+        <surname>Сидорова</surname>
+        <group>2</group>
+    </student>
+    <result student_id="1">
+        <subject>МА</subject>
+        <mark>8</mark>
+    </result>
+    <result student_id="1">
+        <subject>ГА</subject>
+        <mark>8</mark>
+    </result>
+    <result student_id="1">
+        <subject>ТВиМС</subject>
+        <mark>6</mark>
+    </result>
+    <result student_id="2">
+        <subject>МА</subject>
+        <mark>6</mark>
+    </result>
+    <result student_id="2">
+        <subject>ГА</subject>
+        <mark>7</mark>
+    </result>
+    <result student_id="2">
+        <subject>ТВиМС</subject>
+        <mark>9</mark>
+    </result>
+    <result student_id="3">
+        <subject>МА</subject>
+        <mark>3</mark>
+    </result>
+    <result student_id="3">
+        <subject>ГА</subject>
+        <mark>4</mark>
+    </result>
+    <result student_id="3">
+        <subject>ТВиМС</subject>
+        <mark>4</mark>
+    </result>
+    <result student_id="4">
+        <subject>МА</subject>
+        <mark>9</mark>
+    </result>
+    <result student_id="4">
+        <subject>ГА</subject>
+        <mark>9</mark>
+    </result>
+    <result student_id="4">
+        <subject>ТВиМС</subject>
+        <mark>9</mark>
+    </result>
+    <result student_id="5">
+        <subject>МА</subject>
+        <mark>10</mark>
+    </result>
+    <result student_id="5">
+        <subject>ГА</subject>
+        <mark>10</mark>
+    </result>
+    <result student_id="5">
+        <subject>ТВиМС</subject>
+        <mark>10</mark>
+    </result>
+    <result student_id="6">
+        <subject>МА</subject>
+        <mark>8</mark>
+    </result>
+    <result student_id="6">
+        <subject>ГА</subject>
+        <mark>1</mark>
+    </result>
+    <result student_id="6">
+        <subject>ТВиМС</subject>
+        <mark>7</mark>
+    </result>
+</session>
